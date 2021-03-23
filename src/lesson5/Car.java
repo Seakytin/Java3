@@ -34,6 +34,7 @@ public class Car implements Runnable {
         this.speed = speed;
         CARS_COUNT++;
         this.name = "Участник #" + CARS_COUNT;
+
     }
 
     @Override
@@ -42,8 +43,8 @@ public class Car implements Runnable {
         try {
             System.out.println(this.name + " готовится");
             Thread.sleep(500 + (int) (Math.random() * 800));
-            countDownLatchReady.countDown();
             System.out.println(this.name + " готов");
+            countDownLatchReady.countDown();
             startBarrier.await();
         } catch (Exception e) {
             e.printStackTrace();
