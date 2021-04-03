@@ -1,32 +1,32 @@
-//import lesson6.ArithmeticAction;
-//import org.junit.jupiter.api.*;
-//import org.junit.jupiter.params.ParameterizedTest;
-//import org.junit.jupiter.params.provider.Arguments;
-//import org.junit.jupiter.params.provider.CsvSource;
-//import org.junit.jupiter.params.provider.MethodSource;
-//
-//import java.util.ArrayList;
-//import java.util.List;
-//import java.util.TreeSet;
-//import java.util.stream.Stream;
-//
-//import static org.junit.jupiter.api.Assertions.*;
-//
-//public class ArithmeticActionTest {
-//
-//    public static ArithmeticAction action;
-//    static int i;
-//
-//    @BeforeAll
-//    public static void init() {
-//        action = new ArithmeticAction();
-//        i = 0;
-//    }
-//
-//    @BeforeEach
-//    public void foo() {
-//        System.out.println(i++);
-//    }
+import lesson6.ArithmeticAction;
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.TreeSet;
+import java.util.stream.Stream;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+public class ArithmeticActionTest {
+
+    public static ArithmeticAction action;
+    static int i;
+
+    @BeforeAll
+    public static void init() {
+        action = new ArithmeticAction();
+        i = 0;
+    }
+
+    @BeforeEach
+    public void foo() {
+        System.out.println(i++);
+    }
 //
 //    @Test
 //    @Timeout(value = 5)
@@ -144,14 +144,14 @@
 //    public static void destroy() {
 //        action = null;
 //    }
-//    @Test
-//    public void arrayElementAfterTest() {
-//        int[] arr = {1, 2, 4, 4, 2, 3, 4, 1, 7};
-//        assertNotNull(arr);
-//        assertEquals(9, arr.length);
-//        int result = action.arrayElementAfter(arr);
-//        assertArrayEquals(1, 7);
-//        assertEquals(1, 7, result);
-//
-//    }
-//}
+    @Test
+    public void arrayElementAfterTest() {
+        int[] arr = {1, 2, 4, 4, 2, 3, 4, 1, 7};
+        assertNotNull(arr);
+        assertEquals(9, arr.length);
+        int result = action.arrayElementAfter(arr);
+       //assertArrayEquals(1, 7);
+       //assertEquals(1, 7, result);
+
+    }
+}
